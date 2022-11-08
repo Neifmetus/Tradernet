@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E6EBC30CD2890FD6372C15D /* Pods_Tradernet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AD8F2864D4EBBB578745A89 /* Pods_Tradernet.framework */; };
+		9157902429198E28001FE556 /* StockInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9157902329198E28001FE556 /* StockInfo.swift */; };
 		9167350A290F106F00B29520 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91673509290F106F00B29520 /* AppDelegate.swift */; };
-		9167350C290F106F00B29520 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9167350B290F106F00B29520 /* SceneDelegate.swift */; };
-		9167350E290F106F00B29520 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9167350D290F106F00B29520 /* ViewController.swift */; };
-		91673511290F106F00B29520 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9167350F290F106F00B29520 /* Main.storyboard */; };
+		9167350E290F106F00B29520 /* TradeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9167350D290F106F00B29520 /* TradeViewController.swift */; };
 		91673513290F107000B29520 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91673512290F107000B29520 /* Assets.xcassets */; };
 		91673516290F107000B29520 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91673514290F107000B29520 /* LaunchScreen.storyboard */; };
+		91673520290F12C500B29520 /* StockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9167351F290F12C500B29520 /* StockTableViewCell.swift */; };
+		919CDA702915A53E005B6084 /* TradeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CDA6F2915A53E005B6084 /* TradeViewModel.swift */; };
+		919CDA722915A7FE005B6084 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 919CDA712915A7FE005B6084 /* WebSocketManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0AD8F2864D4EBBB578745A89 /* Pods_Tradernet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tradernet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3134CD3FFA33E55FD2E59C4D /* Pods-Tradernet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tradernet.release.xcconfig"; path = "Target Support Files/Pods-Tradernet/Pods-Tradernet.release.xcconfig"; sourceTree = "<group>"; };
+		803B3A6CB3D01F7098D470BF /* Pods-Tradernet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tradernet.debug.xcconfig"; path = "Target Support Files/Pods-Tradernet/Pods-Tradernet.debug.xcconfig"; sourceTree = "<group>"; };
+		9157902329198E28001FE556 /* StockInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockInfo.swift; sourceTree = "<group>"; };
 		91673506290F106F00B29520 /* Tradernet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tradernet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91673509290F106F00B29520 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9167350B290F106F00B29520 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9167350D290F106F00B29520 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		91673510290F106F00B29520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9167350D290F106F00B29520 /* TradeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeViewController.swift; sourceTree = "<group>"; };
 		91673512290F107000B29520 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		91673515290F107000B29520 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		91673517290F107000B29520 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9167351F290F12C500B29520 /* StockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockTableViewCell.swift; sourceTree = "<group>"; };
+		919CDA6F2915A53E005B6084 /* TradeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeViewModel.swift; sourceTree = "<group>"; };
+		919CDA712915A7FE005B6084 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3E6EBC30CD2890FD6372C15D /* Pods_Tradernet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7862D16E49748712A0CC1BC0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AD8F2864D4EBBB578745A89 /* Pods_Tradernet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		916734FD290F106F00B29520 = {
 			isa = PBXGroup;
 			children = (
 				91673508290F106F00B29520 /* Tradernet */,
 				91673507290F106F00B29520 /* Products */,
+				C993DBEE31602E1FB166897C /* Pods */,
+				7862D16E49748712A0CC1BC0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +75,42 @@
 		91673508290F106F00B29520 /* Tradernet */ = {
 			isa = PBXGroup;
 			children = (
+				9167351E290F115F00B29520 /* Interface */,
+				9167351D290F114E00B29520 /* Service */,
 				91673509290F106F00B29520 /* AppDelegate.swift */,
-				9167350B290F106F00B29520 /* SceneDelegate.swift */,
-				9167350D290F106F00B29520 /* ViewController.swift */,
-				9167350F290F106F00B29520 /* Main.storyboard */,
 				91673512290F107000B29520 /* Assets.xcassets */,
 				91673514290F107000B29520 /* LaunchScreen.storyboard */,
 				91673517290F107000B29520 /* Info.plist */,
 			);
 			path = Tradernet;
+			sourceTree = "<group>";
+		};
+		9167351D290F114E00B29520 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				919CDA712915A7FE005B6084 /* WebSocketManager.swift */,
+				9157902329198E28001FE556 /* StockInfo.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		9167351E290F115F00B29520 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				9167350D290F106F00B29520 /* TradeViewController.swift */,
+				919CDA6F2915A53E005B6084 /* TradeViewModel.swift */,
+				9167351F290F12C500B29520 /* StockTableViewCell.swift */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		C993DBEE31602E1FB166897C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				803B3A6CB3D01F7098D470BF /* Pods-Tradernet.debug.xcconfig */,
+				3134CD3FFA33E55FD2E59C4D /* Pods-Tradernet.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9167351A290F107000B29520 /* Build configuration list for PBXNativeTarget "Tradernet" */;
 			buildPhases = (
+				419A45E79F27CC47ACAE6457 /* [CP] Check Pods Manifest.lock */,
 				91673502290F106F00B29520 /* Sources */,
 				91673503290F106F00B29520 /* Frameworks */,
 				91673504290F106F00B29520 /* Resources */,
+				1111B4E7D666CEE86CF1259F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,34 +175,70 @@
 			files = (
 				91673516290F107000B29520 /* LaunchScreen.storyboard in Resources */,
 				91673513290F107000B29520 /* Assets.xcassets in Resources */,
-				91673511290F106F00B29520 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1111B4E7D666CEE86CF1259F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tradernet/Pods-Tradernet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Tradernet/Pods-Tradernet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Tradernet/Pods-Tradernet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		419A45E79F27CC47ACAE6457 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tradernet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		91673502290F106F00B29520 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9167350E290F106F00B29520 /* ViewController.swift in Sources */,
+				9157902429198E28001FE556 /* StockInfo.swift in Sources */,
+				9167350E290F106F00B29520 /* TradeViewController.swift in Sources */,
+				919CDA722915A7FE005B6084 /* WebSocketManager.swift in Sources */,
 				9167350A290F106F00B29520 /* AppDelegate.swift in Sources */,
-				9167350C290F106F00B29520 /* SceneDelegate.swift in Sources */,
+				91673520290F12C500B29520 /* StockTableViewCell.swift in Sources */,
+				919CDA702915A53E005B6084 /* TradeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		9167350F290F106F00B29520 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				91673510290F106F00B29520 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		91673514290F107000B29520 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +366,7 @@
 		};
 		9167351B290F107000B29520 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 803B3A6CB3D01F7098D470BF /* Pods-Tradernet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,9 +377,9 @@
 				INFOPLIST_FILE = Tradernet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,12 +389,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		9167351C290F107000B29520 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3134CD3FFA33E55FD2E59C4D /* Pods-Tradernet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,9 +406,9 @@
 				INFOPLIST_FILE = Tradernet/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,7 +418,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
