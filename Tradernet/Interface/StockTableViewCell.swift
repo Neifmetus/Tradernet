@@ -92,13 +92,29 @@ class StockTableViewCell: UITableViewCell {
     }
     
     func configure(model: Stock) {
-        titleLabel.text = model.name
-        subtitleLabel.text = model.stocksInfo
-        priceShiftLabel.text = model.priceDiff
-        setPrice(price: model.price, changeState: model.priceShift)
+        setTitles(model: model)
+        setPrice(price: model.price ?? 0, changeState: model.priceShift)
     }
     
-    func setPrice(price: Double, changeState: PriceShiftState = .noDiff) {
+    func update(model: Stock) {
+        setTitles(model: model)
+        if let price = model.price {
+            setPrice(price: price, changeState: model.priceShift)
+        }
+    }
+    
+    private func setTitles(model: Stock) {
+        titleLabel.text = model.ticker
+        if !model.stocksInfo.isEmpty {
+            subtitleLabel.text = model.stocksInfo
+        }
+        
+        if !model.priceDiff.isEmpty {
+            priceShiftLabel.text = model.priceDiff
+        }
+    }
+    
+    private func setPrice(price: Double, changeState: PriceShiftState = .noDiff) {
         let priceString = price > 0 ? "+\(price)%" : "\(price)%"
         
         if changeState != .noDiff {

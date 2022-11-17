@@ -9,7 +9,8 @@ class WebSocketManager {
     let socketUrl = URL(string: "wss://wss.tradernet.ru")!
     var isConnected = false
     let socket: WebSocket
-    let quotes = "[\"quotes\",[\"TRNFP\",\"TATNP\",\"TATN\",\"AAPL.SPB\",\"SU52001RMFS3\",\"SU29011RMFS2\",\"SU26216RMFS0\",\"SU26215RMFS2\",\"SU26212RMFS9\",\"SU26207RMFS9\",\"SU25077RMFS7\"]]"
+    
+    let quotes = "[\"quotes\",[\"RSTI\",\"GAZP\",\"MRKZ\",\"RUAL\",\"HYDR\",\"MRKS\",\"SBER\",\"FEES\",\"TGKA\",\"VTBR\",\"ANH.US\",\"VICL.US\",\"BURG.US\",\"NBL.US\",\"YETI.US\",\"WSFS.US\",\"NIO.US\",\"DXC.US\",\"MIC.US\",\"HSBC.US\",\"EXPN.EU\",\"GSK.EU\",\"SH P.EU\",\"MAN.EU\",\"DB1.EU\",\"MUV2.EU\",\"TATE.EU\",\"KGF.EU\",\"MGGT.EU\",\"SGGD.EU\"]]"
     
     weak var delegate: WebSocketManagerDelegate?
     

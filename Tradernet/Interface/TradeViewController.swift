@@ -52,6 +52,8 @@ extension TradeViewController: TradeViewModelDelegate {
     }
     
     func updateStockInfo(index: Int) {
-        tableView.reloadRows(at: [IndexPath(row: index, section: 0)], with: .automatic)
+        if let cell = tableView.cellForRow(at: IndexPath(row: index, section: 0)) as? StockTableViewCell {
+            cell.update(model: viewModel.stocks[index])
+        }
     }
 }

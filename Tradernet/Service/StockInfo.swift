@@ -1,6 +1,7 @@
 import Foundation
 
 struct StockInfo: Decodable {
+    let c: String
     let ltr: String?
     let name2: String?
     // change in percents
